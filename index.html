@@ -1,0 +1,27 @@
+<html>
+  <head>
+  <link rel="stylesheet" href="style.css">
+  <script src="nouns.js">
+  </script>
+
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <h1>Art Idea Generator</h1>
+  <h2 id="outputArea">by pressing the button you will be sent to a google images page.</h2>
+  <button onclick="button()">
+Give me a random art idea..
+  </button>
+  <script>
+  function button() {
+    console.log("function running");
+    var noun = nouns[Math.floor((Math.random() * 1000))]
+    var url = "https://www.google.com/search?q=" + noun + "&source=lnms&tbm=isch"
+    console.log("found noun");
+    window.open(url);
+  }
+  </script>
+  </body>
+</html>

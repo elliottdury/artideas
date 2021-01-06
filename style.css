@@ -1,0 +1,30 @@
+body {
+  font-family: 'Nunito', sans-serif;
+  padding-left: 10%;
+  padding-top: 2%;
+}
+
+h2 {
+  color: grey;
+}
+
+button {
+  margin-top: 15%;
+  border-radius: 8px;
+  border: none;
+  background-color: #88D775;
+  color: #303030;
+  outline: none;
+  font-size: 50px;
+}
+
+button:hover {
+background-color: #74B763;
+color: #464646;
+}
+
+button:active {
+  background-color: #74B763;
+  transform: translateY(5px);
+  color: #464646;
+  }
